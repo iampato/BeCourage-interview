@@ -12,6 +12,9 @@ const Colors = {
     placeholder: '#A8A8A8',
     error: '#FF3B30',
     success: '#4CD964',
+    grey: '#8E8E93',
+    strongGrey: '#C7C7CC',
+    lightGrey: '#EFEFF4',
   },
   dark: {
     background: '#000000',
@@ -23,6 +26,9 @@ const Colors = {
     placeholder: '#A8A8A8',
     error: '#FF3B30',
     success: '#4CD964',
+    grey: '#8E8E93',
+    strongGrey: '#C7C7CC',
+    lightGrey: '#EFEFF4',
   },
 };
 

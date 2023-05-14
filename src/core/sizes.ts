@@ -28,7 +28,7 @@ export const dp = (size: number) => size / scale;
 // The font scale is a value between 1 and 2 that indicates how much
 // larger or smaller the font should be on the device.
 export const responsiveFontSize = (size: number) => {
-  return px(size * fontScale);
+  return px((size * fontScale) / (scale * 0.75));
 };
 
 // responsive width and height
@@ -39,6 +39,11 @@ export const responsiveWidth = (size: number) => {
 export const responsiveHeight = (size: number) => {
   const heightRatio = height / baseWidth;
   return PixelRatio.roundToNearestPixel(size * heightRatio);
+};
+// responsive radius
+export const responsiveRadius = (size: number) => {
+  const widthRatio = width / baseWidth;
+  return PixelRatio.roundToNearestPixel(size * widthRatio);
 };
 
 // example of usage

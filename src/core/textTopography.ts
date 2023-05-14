@@ -1,6 +1,28 @@
 import {StyleSheet} from 'react-native';
 import {responsiveFontSize} from './sizes';
 
+export const TextFontWeight = StyleSheet.create({
+  // Text typography for headings
+  light: {
+    fontFamily: 'OpenSans-Light',
+  },
+  medium: {
+    fontFamily: 'OpenSans-Medium',
+  },
+  regular: {
+    fontFamily: 'OpenSans-Regular',
+  },
+  semiBold: {
+    fontFamily: 'OpenSans-SemiBold',
+  },
+  bold: {
+    fontFamily: 'OpenSans-Bold',
+  },
+  extrabold: {
+    fontFamily: 'OpenSans-ExtraBold',
+  },
+});
+
 const TextTopography = StyleSheet.create({
   // Text typography for headings
   heading1Medium: {
@@ -43,12 +65,12 @@ const TextTopography = StyleSheet.create({
   // Text typography for body text
   body1: {
     fontSize: responsiveFontSize(16),
-    fontFamily: 'Nunito',
+    fontFamily: 'OpenSans-Regular',
     lineHeight: 24,
   },
   body2: {
     fontSize: responsiveFontSize(14),
-    fontFamily: 'Nunito',
+    fontFamily: 'OpenSans-Regular',
     lineHeight: 22,
   },
   body3: {
@@ -63,14 +85,21 @@ const TextTopography = StyleSheet.create({
 
   // Text typography for captions
   caption: {
-    fontSize: responsiveFontSize(12),
-    fontFamily: 'Nunito',
+    fontSize: responsiveFontSize(10),
+    fontFamily: 'OpenSans-Light',
     lineHeight: 16,
   },
   subtitle: {
     fontSize: responsiveFontSize(14),
     fontFamily: 'Nunito',
     lineHeight: 20,
+  },
+
+  // button text
+  buttonText: {
+    fontSize: responsiveFontSize(12),
+    fontFamily: 'OpenSans-Bold',
+    lineHeight: 24,
   },
 });
 

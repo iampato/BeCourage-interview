@@ -2,11 +2,14 @@ import {useColorScheme, StatusBar} from 'react-native';
 import useTheme from '../core/theme';
 import React from 'react';
 
-const BecourageStatusBar = () => {
+export interface BecourageStatusBarProps {
+  backgroundColor?: string;
+}
+const BecourageStatusBar = ({backgroundColor}: BecourageStatusBarProps) => {
   const isDarkMode = useColorScheme() === 'dark';
   const color = useTheme();
   const backgroundStyle = {
-    backgroundColor: color.background,
+    backgroundColor: backgroundColor ?? color.background,
   };
   return (
     <StatusBar
