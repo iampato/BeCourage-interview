@@ -25,7 +25,7 @@ const LandingScreen = () => {
     navigate(AuthenticationScreens.Login, {});
   };
   const handleRegisterOnPress = () => {
-    console.log('Register button pressed');
+    navigate(AuthenticationScreens.Register, {});
   };
 
   return (

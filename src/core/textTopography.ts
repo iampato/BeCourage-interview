@@ -27,38 +27,38 @@ const TextTopography = StyleSheet.create({
   // Text typography for headings
   heading1Medium: {
     fontSize: responsiveFontSize(24),
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     fontFamily: 'OpenSans-Medium',
     lineHeight: 32,
   },
   heading1bold: {
     fontSize: responsiveFontSize(24),
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     fontFamily: 'OpenSans-Bold',
     lineHeight: 32,
   },
   heading1Extrabold: {
     fontSize: responsiveFontSize(24),
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     fontFamily: 'OpenSans-ExtraBold',
     lineHeight: 32,
   },
   heading2: {
     fontSize: responsiveFontSize(20),
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     fontFamily: 'OpenSans-Regular',
     lineHeight: 28,
   },
   heading3: {
     fontSize: responsiveFontSize(16),
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     fontFamily: 'Nunito',
     lineHeight: 24,
   },
   heading4: {
     fontSize: responsiveFontSize(14),
-    fontWeight: 'bold',
-    fontFamily: 'Nunito',
+    // fontWeight: 'bold',
+    fontFamily: 'OpenSans-Bold',
     lineHeight: 24,
   },
 
@@ -74,12 +74,16 @@ const TextTopography = StyleSheet.create({
     lineHeight: 22,
   },
   body3: {
-    fontSize: responsiveFontSize(12),
+    fontSize: responsiveFontSize(11),
     fontFamily: 'OpenSans-Regular',
     lineHeight: 20,
   },
   body4: {
-    fontSize: responsiveFontSize(6),
+    fontSize: responsiveFontSize(10),
+    fontFamily: 'OpenSans-Regular',
+  },
+  body5: {
+    fontSize: responsiveFontSize(9),
     fontFamily: 'OpenSans-Regular',
   },
 

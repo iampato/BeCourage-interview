@@ -4,6 +4,8 @@ import LandingScreen from '../screens/landingScreen';
 import LoginScreen from '../screens/loginScreen';
 import BecourageStatusBar from '../../../components/statusBar';
 import useTheme from '../../../core/theme';
+import RegisterScreen from '../screens/registerScreen';
+import ForgotPasswordScreen from '../screens/forgotPasswordScreen';
 
 export const AuthenticationScreens = {
   Landing: 'landing',
@@ -29,6 +31,16 @@ const AuthenticationNavigation = () => {
           name={AuthenticationScreens.Login}
           options={{headerShown: false}}
           component={LoginScreen}
+        />
+        <Stack.Screen
+          name={AuthenticationScreens.Register}
+          options={{headerShown: false}}
+          component={RegisterScreen}
+        />
+        <Stack.Screen
+          name={AuthenticationScreens.ForgotPassword}
+          options={{headerShown: false}}
+          component={ForgotPasswordScreen}
         />
       </Stack.Navigator>
     </>
