@@ -2,6 +2,8 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import AuthenticationNavigation from '../features/authentication/navigation/authenticationNavigation';
 import {createNavigationContainerRef} from '@react-navigation/native';
+import MainNavigation from '../features/main/navigation/mainNavigation';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 export const navigationRef = createNavigationContainerRef();
 
@@ -11,10 +13,28 @@ export function navigate(name: string, params: Object) {
   }
 }
 
+export const RootScreens = {
+  Auth: 'auth',
+  Main: 'main',
+};
+
+const Stack = createNativeStackNavigator();
+
 const RootNavigation = () => {
   return (
     <NavigationContainer ref={navigationRef}>
-      <AuthenticationNavigation />
+      <Stack.Navigator initialRouteName={RootScreens.Main}>
+        <Stack.Screen
+          name={RootScreens.Auth}
+          options={{headerShown: false}}
+          component={AuthenticationNavigation}
+        />
+        <Stack.Screen
+          name={RootScreens.Main}
+          options={{headerShown: false}}
+          component={MainNavigation}
+        />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };

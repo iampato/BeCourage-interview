@@ -52,11 +52,18 @@ const TextTopography = StyleSheet.create({
   heading3: {
     fontSize: responsiveFontSize(16),
     // fontWeight: 'bold',
-    fontFamily: 'Nunito',
+    fontFamily: 'OpenSans-Regular',
     lineHeight: 24,
   },
   heading4: {
     fontSize: responsiveFontSize(14),
+    // fontWeight: 'bold',
+    fontFamily: 'OpenSans-Bold',
+    lineHeight: 24,
+  },
+
+  heading5: {
+    fontSize: responsiveFontSize(12),
     // fontWeight: 'bold',
     fontFamily: 'OpenSans-Bold',
     lineHeight: 24,
@@ -92,6 +99,10 @@ const TextTopography = StyleSheet.create({
     fontSize: responsiveFontSize(10),
     fontFamily: 'OpenSans-Light',
     lineHeight: 16,
+  },
+  smallText: {
+    fontSize: responsiveFontSize(8),
+    fontFamily: 'OpenSans-Light',
   },
   subtitle: {
     fontSize: responsiveFontSize(14),
