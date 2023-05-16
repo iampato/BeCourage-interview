@@ -44,13 +44,13 @@ Run the project, depending on the `React Native CLI` installed, run metro:
 
 ```
 yarn start
-``
+```
 
 or 
 
 ```
 npm run start
-``
+```
 
 If it gives you the option to either run android or ios press `a` for android and `i` for ios if not
 run :
@@ -134,6 +134,12 @@ For this app here were my core modules; constansts to hold my immutable variable
 ```
 
 3. The **Feature*** module houses all the features and in this app they include
+
+Ideally a feature has the following;
+- screens - screens in that feature
+- navigation - handle navigation in that feature and the root navigation imports this
+- store - have your state management solution here
+- components - reusable components in that feature
 
 ```
 └── features
