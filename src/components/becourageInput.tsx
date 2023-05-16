@@ -25,14 +25,14 @@ const BecourageTextInput: React.FC<BecourageTextInputProps> = ({
         styles.container,
         containerStyle,
         inputStyle,
-        {backgroundColor: colors.lightGrey},
+        {backgroundColor: colors.lightestGrey},
       ]}>
       {props.prefix && <View style={styles.prefix}>{props.prefix}</View>}
       <TextInput
         style={[
           containerStyle,
           inputStyle,
-          {backgroundColor: colors.lightGrey},
+          {backgroundColor: colors.lightestGrey, width: '70%'},
         ]}
         underlineColorAndroid="transparent"
         placeholderTextColor="gray"
@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     flexDirection: 'row',
     alignItems: 'center',
+    width: '100%',
   },
   prefix: {
     marginRight: responsiveWidth(10),

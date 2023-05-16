@@ -23,7 +23,7 @@ const Stack = createNativeStackNavigator();
 const RootNavigation = () => {
   return (
     <NavigationContainer ref={navigationRef}>
-      <Stack.Navigator initialRouteName={RootScreens.Main}>
+      <Stack.Navigator initialRouteName={RootScreens.Auth}>
         <Stack.Screen
           name={RootScreens.Auth}
           options={{headerShown: false}}

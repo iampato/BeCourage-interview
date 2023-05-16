@@ -9,7 +9,11 @@ import {
 } from 'react-native';
 import useTheme from '../core/theme';
 import TextTopography from '../core/textTopography';
-import {responsiveHeight, responsiveRadius} from '../core/sizes';
+import {
+  responsiveHeight,
+  responsiveRadius,
+  responsiveWidth,
+} from '../core/sizes';
 
 interface OutlinedButtonProps extends TouchableOpacityProps {
   title: string;
@@ -26,9 +30,9 @@ const OutlinedButton: React.FC<OutlinedButtonProps> = ({
   const colors = useTheme();
   return (
     <TouchableOpacity
-      style={[styles.button, buttonStyle, {borderColor: colors.secondary}]}
+      style={[{borderColor: colors.secondary}, styles.button, buttonStyle]}
       {...props}>
-      <Text style={[styles.text, textStyle, {color: colors.secondary}]}>
+      <Text style={[{color: colors.secondary}, styles.text, textStyle]}>
         {title}
       </Text>
     </TouchableOpacity>
@@ -37,8 +41,8 @@ const OutlinedButton: React.FC<OutlinedButtonProps> = ({
 
 const styles = StyleSheet.create({
   button: {
-    paddingVertical: responsiveHeight(5),
-    paddingHorizontal: 20,
+    paddingVertical: responsiveHeight(4.5),
+    paddingHorizontal: responsiveWidth(15),
     borderRadius: responsiveRadius(17),
     alignItems: 'center',
     justifyContent: 'center',

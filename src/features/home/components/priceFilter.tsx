@@ -79,10 +79,10 @@ export const PriceFilter = ({value, onValueChanged}: PriceFilterProps) => {
             height: responsiveHeight(10),
             width: 3,
             marginHorizontal: responsiveWidth(2),
-            backgroundColor: colors.grey,
+            backgroundColor: colors.lightGrey,
           }}
           tenthItemStyle={{
-            // backgroundColor: 'red',
+            backgroundColor: colors.error,
             height: responsiveHeight(15),
           }}
         />

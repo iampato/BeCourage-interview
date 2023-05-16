@@ -1,7 +1,11 @@
-import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
-import React from 'react';
-import useTheme from '../../../core/theme';
+import * as React from 'react';
+import Stepper from 'react-native-stepper-ui';
 import BecourageScaffold from '../../../components/becourageScaffold';
+import {useState} from 'react';
+import QuatationType from '../components/quotationType';
+import QuatationForm from '../components/quotationForm';
+import {navigationRef} from '../../../app/rootNavigation';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import {appConstants} from '../../../core/constants';
 import {
   responsiveWidth,
@@ -9,12 +13,11 @@ import {
   responsiveRadius,
 } from '../../../core/sizes';
 import TextTopography, {TextFontWeight} from '../../../core/textTopography';
-import {QuoteCard, quoutes} from '../components/quotationCard';
-import GradientButton from '../../../components/gradientButton';
-import {navigate} from '../../../app/rootNavigation';
-import {QuatationScreens} from '../navigation/quatationNavigation';
+import useTheme from '../../../core/theme';
 
-const QuatationScreen = () => {
+const AddQuatationScreen = () => {
+  const [active, setActive] = useState(0);
+  const [type, setType] = useState(1);
   const colors = useTheme();
   const dynamicStyles = {
     blackTextColor: {
@@ -40,10 +43,6 @@ const QuatationScreen = () => {
     },
   };
 
-  const handleAddQuatation = () => {
-    navigate(QuatationScreens.AddQuatation, {});
-  };
-
   return (
     <BecourageScaffold containerStyle={styles.container}>
       <View style={styles.userSectionContainer}>
@@ -52,7 +51,7 @@ const QuatationScreen = () => {
             {appConstants.appName}
           </Text>
           <Text style={[dynamicStyles.greyTextColor, styles.userSectionAbout]}>
-            Your quotation, you can also request one
+            Add a new quotation, let's get it 💪
           </Text>
         </View>
 
@@ -64,18 +63,37 @@ const QuatationScreen = () => {
           style={styles.imageAvatar}
         />
       </View>
-      <ScrollView showsVerticalScrollIndicator={false}>
-        {quoutes.map((quote, index) => (
-          <QuoteCard key={index} quote={quote} />
-        ))}
-      </ScrollView>
-      <GradientButton
-        colors={[colors.primaryLight, colors.secondary]}
-        title={'Request Quotation'}
-        // eslint-disable-next-line react-native/no-inline-styles
-        textStyle={{textTransform: 'none'}}
-        gradientStyle={styles.actionBtnSpacer}
-        onPress={handleAddQuatation}
+      <Stepper
+        active={active}
+        showButton={false}
+        stepStyle={{
+          backgroundColor: active === 1 ? colors.primary : colors.grey,
+        }}
+        wrapperStyle={styles.stepperWrapper}
+        content={[
+          <QuatationType
+            onNext={(type: number) => {
+              setType(type);
+              setActive(1);
+            }}
+          />,
+          <QuatationForm
+            type={type}
+            onNext={() => {
+              if (navigationRef.canGoBack()) {
+                navigationRef.goBack();
+              }
+            }}
+            onBack={() => setActive(p => p - 1)}
+          />,
+        ]}
+        onBack={() => setActive(p => p - 1)}
+        onFinish={() => {
+          if (navigationRef.canGoBack()) {
+            navigationRef.goBack();
+          }
+        }}
+        onNext={() => setActive(p => p + 1)}
       />
     </BecourageScaffold>
   );
@@ -85,6 +103,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: responsiveWidth(15),
+  },
+  stepperWrapper: {
+    flex: 1,
   },
   imageAvatar: {
     height: responsiveHeight(20),
@@ -101,9 +122,6 @@ const styles = StyleSheet.create({
   userSectionDetails: {
     flexDirection: 'column',
   },
-  lottieContainer: {
-    width: responsiveWidth(45),
-  },
   userSectionName: {
     ...TextTopography.heading5,
     ...TextFontWeight.bold,
@@ -113,13 +131,5 @@ const styles = StyleSheet.create({
     ...TextTopography.caption,
     ...TextFontWeight.regular,
   },
-  actionBtnSpacer: {
-    position: 'absolute',
-    bottom: responsiveHeight(10),
-    right: responsiveWidth(5),
-    elevation: 5,
-    paddingVertical: responsiveHeight(5),
-    borderRadius: responsiveRadius(25),
-  },
 });
-export default QuatationScreen;
+export default AddQuatationScreen;

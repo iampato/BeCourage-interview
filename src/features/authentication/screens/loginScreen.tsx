@@ -13,6 +13,7 @@ import BecourageTextInput from '../../../components/becourageInput';
 import TextTopography, {TextFontWeight} from '../../../core/textTopography';
 import {RootScreens, navigate} from '../../../app/rootNavigation';
 import {AuthenticationScreens} from '../navigation/authenticationNavigation';
+import BecourageStatusBar from '../../../components/statusBar';
 
 const LoginScreen = () => {
   const colors = useTheme();
@@ -50,6 +51,7 @@ const LoginScreen = () => {
 
   return (
     <View style={[dynamicStyles.containerColor, styles.container]}>
+      <BecourageStatusBar backgroundColor={colors.secondary} />
       <Svg style={styles.waveContainer} viewBox="0 0 1440 480">
         <Path
           fill={colors.secondary}
