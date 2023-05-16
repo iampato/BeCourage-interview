@@ -193,7 +193,21 @@ For this app here were my core modules; constansts to hold my immutable variable
 
 The final app looks like this:
 
-<img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632695.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632699.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632703.png" width="240"/>  <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632737.png" width="240"/>  <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668424982.png" width="240"/>  <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632741.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632743.png" width="240"/>  <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632749.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632755.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632761.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632766.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272630.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272643.png" width="240"/> 
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272646.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272650.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272652.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272658.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272662.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272728.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272732.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272735.png" width="240"/> 
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272738.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272742.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272745.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272749.png" width="240"/>
+<img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272755.png" width="240"/>
 
 ## Video demo 
 https://user-images.githubusercontent.com/32388339/202310558-61b00b69-28b9-48bf-bf10-5b056fd868f3.mp4
