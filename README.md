@@ -196,5 +196,6 @@ The final app looks like this:
 <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632695.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632699.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632703.png" width="240"/>  <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632737.png" width="240"/>  <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668424982.png" width="240"/>  <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632741.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632743.png" width="240"/>  <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632749.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632755.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632761.png" width="240"/> <img src="https://github.com/iampato/magic/blob/main/screenshots/Screenshot_1668632766.png" width="240"/>
 
 ## Video demo 
-https://user-images.githubusercontent.com/32388339/202310558-61b00b69-28b9-48bf-bf10-5b056fd868f3.mp4
+https://github.com/iampato/BeCourage/assets/32388339/50bf106b-b80f-4c09-a1d2-9c7e3c4d08bc
+
 
