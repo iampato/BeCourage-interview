@@ -210,5 +210,6 @@ The final app looks like this:
 <img src="https://github.com/iampato/BeCourage/blob/main/screenshots/Screenshot_1684272755.png" width="240"/>
 
 ## Video demo 
-https://user-images.githubusercontent.com/32388339/202310558-61b00b69-28b9-48bf-bf10-5b056fd868f3.mp4
+https://github.com/iampato/BeCourage/assets/32388339/50bf106b-b80f-4c09-a1d2-9c7e3c4d08bc
+
 
