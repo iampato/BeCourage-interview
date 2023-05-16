@@ -1,6 +1,7 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import PolicyScreen from '../screens/policyScreen';
+// import PolicyScreen from '../screens/policyScreen';
+import PolicyTabs from './policyTabs';
 
 export const PolicyScreens = {
   Policy: 'main_policy',
@@ -15,7 +16,7 @@ const PolicyNavigation = () => {
         <Stack.Screen
           name={PolicyScreens.Policy}
           options={{headerShown: false}}
-          component={PolicyScreen}
+          component={PolicyTabs}
         />
       </Stack.Navigator>
     </>

@@ -1,11 +1,7 @@
-import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import BecourageScaffold from '../../../components/becourageScaffold';
-import {
-  responsiveHeight,
-  responsiveRadius,
-  responsiveWidth,
-} from '../../../core/sizes';
+import {responsiveHeight, responsiveWidth} from '../../../core/sizes';
 import TextTopography, {TextFontWeight} from '../../../core/textTopography';
 import useTheme from '../../../core/theme';
 import {MyPolicyCard, myPolicies} from '../components/policyCard';
@@ -40,12 +36,12 @@ const PolicyScreen = () => {
       {/* user section */}
       <View style={styles.userSectionContainer}>
         <View style={styles.userSectionDetails}>
-          <Text style={[dynamicStyles.blackTextColor, styles.userSectionName]}>
-            My Policies
+          <Text style={[dynamicStyles.greyTextColor, styles.userSectionAbout]}>
+            View all your active policies, you can renew them here and also
+            request a new one
           </Text>
         </View>
       </View>
-      <Text>Policy Screen</Text>
       <ScrollView showsVerticalScrollIndicator={false}>
         {myPolicies.map((policy, index) => (
           <MyPolicyCard key={index} policy={policy} />
@@ -58,6 +54,7 @@ const PolicyScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    width: '95%',
     paddingHorizontal: responsiveWidth(15),
   },
   userSectionContainer: {
@@ -69,56 +66,10 @@ const styles = StyleSheet.create({
   userSectionDetails: {
     flexDirection: 'column',
   },
-  userSectionName: {
-    ...TextTopography.heading5,
-    ...TextFontWeight.medium,
+  userSectionAbout: {
+    ...TextTopography.caption,
+    ...TextFontWeight.regular,
     marginBottom: responsiveHeight(3),
-  },
-
-  policyContainer: {
-    paddingHorizontal: responsiveWidth(15),
-    paddingVertical: responsiveHeight(10),
-    borderRadius: responsiveRadius(10),
-    flexDirection: 'row',
-  },
-  policyImage: {
-    width: responsiveWidth(40),
-    height: responsiveWidth(40),
-    borderRadius: responsiveRadius(100),
-  },
-  policyDetails: {
-    marginLeft: responsiveWidth(12),
-    flexDirection: 'column',
-  },
-  policyType: {
-    ...TextTopography.body5,
-    ...TextFontWeight.medium,
-  },
-  policyName: {
-    ...TextTopography.heading5,
-    ...TextFontWeight.bold,
-  },
-  policyAbout: {
-    ...TextTopography.body5,
-    ...TextFontWeight.medium,
-    marginTop: responsiveHeight(6),
-    marginBottom: responsiveHeight(5),
-  },
-  renewButton: {
-    borderRadius: responsiveRadius(10),
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    width: responsiveWidth(150),
-    paddingVertical: responsiveHeight(4.5),
-    paddingHorizontal: responsiveWidth(10),
-  },
-  renewText: {
-    ...TextTopography.body5,
-    ...TextFontWeight.bold,
-  },
-  renewIcons: {
-    flexDirection: 'row',
   },
 });
 export default PolicyScreen;

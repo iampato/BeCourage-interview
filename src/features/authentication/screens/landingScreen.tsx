@@ -40,7 +40,7 @@ const LandingScreen = () => {
       </View>
       <View style={styles.lowerContainer}>
         <GradientButton
-          colors={[colors.primary, colors.secondary]}
+          colors={[colors.primaryLight, colors.secondary]}
           title={'Login'}
           buttonStyle={styles.actionBtnSpacer}
           onPress={handleLoginOnPress}

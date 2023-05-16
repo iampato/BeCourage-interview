@@ -30,7 +30,7 @@ export const PriceFilter = ({value, onValueChanged}: PriceFilterProps) => {
       color: colors.strongGrey,
     },
     primaryBgColor: {
-      backgroundColor: colors.primaryLight,
+      backgroundColor: colors.primary,
     },
     greyBgColor: {
       backgroundColor: colors.grey,
@@ -68,7 +68,6 @@ export const PriceFilter = ({value, onValueChanged}: PriceFilterProps) => {
             height: responsiveHeight(20),
             maxHeight: responsiveHeight(20),
             marginTop: responsiveHeight(5),
-            backgroundColor: colors.primaryLight,
           }}
           // eslint-disable-next-line react-native/no-inline-styles
           thumbStyle={{

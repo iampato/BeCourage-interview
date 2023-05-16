@@ -9,7 +9,6 @@ import {
 } from '../../../core/sizes';
 import TextTopography, {TextFontWeight} from '../../../core/textTopography';
 import MdIcon from 'react-native-vector-icons/MaterialIcons';
-import {get} from 'react-native/Libraries/TurboModule/TurboModuleRegistry';
 
 interface PolicyCardProps {
   policy: PolicyModel;
@@ -25,7 +24,7 @@ export const PolicyCard = ({policy}: PolicyCardProps) => {
       color: colors.background,
     },
     greyTextColor: {
-      color: colors.grey,
+      color: colors.strongGrey,
     },
     strongGreyTextColor: {
       color: colors.strongGrey,
@@ -177,7 +176,7 @@ const styles = StyleSheet.create({
     ...TextFontWeight.bold,
   },
   policyChip: {
-    borderWidth: 1.5,
+    borderWidth: 1.1,
     borderRadius: responsiveRadius(15),
     marginRight: responsiveWidth(10),
     marginTop: responsiveHeight(5),

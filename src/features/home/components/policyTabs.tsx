@@ -60,13 +60,13 @@ export const PolicyTabs = ({tabIndex, onTabChanged}: PolicyTabsProps) => {
       color: colors.strongGrey,
     },
     primaryBgColor: {
-      backgroundColor: colors.primaryLight,
+      backgroundColor: colors.primary,
     },
     greyBgColor: {
       backgroundColor: colors.grey,
     },
     lightGreyBgColor: {
-      backgroundColor: colors.lightGrey,
+      backgroundColor: colors.lighterGrey,
     },
   };
   return (
@@ -108,8 +108,8 @@ export const PolicyTabs = ({tabIndex, onTabChanged}: PolicyTabsProps) => {
 const styles = StyleSheet.create({
   tabsContainer: {
     // backgroundColor: 'red',
-    marginTop: responsiveHeight(12),
-    maxHeight: responsiveHeight(45),
+    marginTop: responsiveHeight(8),
+    maxHeight: responsiveHeight(35),
   },
   tabsContentContainer: {
     // backgroundColor: 'green',

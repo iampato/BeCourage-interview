@@ -6,9 +6,7 @@ import {
   responsiveHeight,
   responsiveRadius,
   responsiveWidth,
-  screenWidth,
 } from '../../../core/sizes';
-import Lottie from 'lottie-react-native';
 import TextTopography, {TextFontWeight} from '../../../core/textTopography';
 
 import {PolicyCard, policies} from '../components/policyCard';

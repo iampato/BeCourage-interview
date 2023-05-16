@@ -23,22 +23,23 @@ export const myPolicies: PolicyModel[] = [
     policyAbout:
       'Your policy purchased on January, 2023 will expires in 10 days',
     policyImage:
-      'https://jubileeinsurance.com/ke/wp-content/uploads/2021/04/logo.png',
+      'https://github.com/iampato/BeCourage/blob/main/assets/images/jubilee.png?raw=true',
   },
   {
-    policyType: 'Life',
-    policyName: 'Jubilee Insurance',
-    policyAbout:
-      'Your policy purchased on January, 2023 will expires in 10 days',
-    policyImage: 'https://www.apainsurance.org/img/logon.png',
-  },
-  {
-    policyType: 'Life',
-    policyName: 'Jubilee Insurance',
+    policyType: 'Car',
+    policyName: 'APA Insurance',
     policyAbout:
       'Your policy purchased on January, 2023 will expires in 10 days',
     policyImage:
-      'https://www.madison.co.ke/wp-content/uploads/2020/12/cropped-favicon-180x180.jpg',
+      'https://github.com/iampato/BeCourage/blob/main/assets/images/apa.png?raw=true',
+  },
+  {
+    policyType: 'Health',
+    policyName: 'Madison Insurance',
+    policyAbout:
+      'Your policy purchased on January, 2023 will expires in 10 days',
+    policyImage:
+      'https://github.com/iampato/BeCourage/blob/main/assets/images/madison.jpeg?raw=true',
   },
 ];
 
@@ -67,7 +68,7 @@ export const MyPolicyCard = ({policy}: PolicyCardProps) => {
       backgroundColor: colors.grey,
     },
     lightGreyBgColor: {
-      backgroundColor: colors.lightGrey,
+      backgroundColor: colors.lighterGrey,
     },
 
     primaryColor: {
@@ -95,7 +96,7 @@ export const MyPolicyCard = ({policy}: PolicyCardProps) => {
         </Text>
         <Text style={[styles.policyAbout, dynamicStyles.greyTextColor]}>
           Your policy purchased on January, 2023 will{' '}
-          <Text style={{color: 'red'}}>expires in 10 days</Text>{' '}
+          <Text style={{color: colors.error}}>expires in 10 days</Text>{' '}
         </Text>
         <LinearGradient
           start={{x: 1, y: 0}}
@@ -128,34 +129,35 @@ export const MyPolicyCard = ({policy}: PolicyCardProps) => {
 
 const styles = StyleSheet.create({
   policyContainer: {
-    paddingHorizontal: responsiveWidth(15),
-    paddingVertical: responsiveHeight(10),
+    paddingHorizontal: responsiveWidth(10),
+    paddingVertical: responsiveHeight(5),
     borderRadius: responsiveRadius(10),
     flexDirection: 'row',
     marginVertical: responsiveHeight(3),
   },
   policyImage: {
-    width: responsiveWidth(40),
-    height: responsiveWidth(40),
+    width: responsiveWidth(35),
+    height: responsiveWidth(35),
     borderRadius: responsiveRadius(100),
   },
   policyDetails: {
     marginLeft: responsiveWidth(12),
     flexDirection: 'column',
+    flex: 1,
   },
   policyType: {
-    ...TextTopography.body5,
+    ...TextTopography.caption,
     ...TextFontWeight.medium,
   },
   policyName: {
     ...TextTopography.heading5,
-    ...TextFontWeight.bold,
+    ...TextFontWeight.semiBold,
   },
   policyAbout: {
-    ...TextTopography.body5,
+    ...TextTopography.caption,
     ...TextFontWeight.medium,
-    marginTop: responsiveHeight(6),
-    marginBottom: responsiveHeight(5),
+    marginTop: responsiveHeight(5),
+    marginBottom: responsiveHeight(3),
   },
   renewButton: {
     borderRadius: responsiveRadius(10),
