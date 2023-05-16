@@ -140,6 +140,7 @@ const CommissionScreen = () => {
       <GradientButton
         colors={[colors.primaryLight, colors.secondary]}
         title={'Redeem Points'}
+        textStyle={{textTransform: 'none'}}
         buttonStyle={styles.actionBtnSpacer}
         onPress={() => {}}
       />

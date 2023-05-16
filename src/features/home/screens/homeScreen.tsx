@@ -69,12 +69,6 @@ const HomeScreen = () => {
           resizeMode="cover"
           style={styles.imageAvatar}
         />
-        {/* <Lottie
-          style={styles.lottieContainer}
-          source={require('../../../../assets/lottie/waving.json')}
-          autoPlay
-          loop
-        /> */}
       </View>
 
       <PolicyTabs tabIndex={tab} onTabChanged={onTabChanged} />

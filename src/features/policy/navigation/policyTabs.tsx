@@ -39,6 +39,7 @@ export default function PolicyTabs() {
           paddingHorizontal: responsiveWidth(10),
           elevation: 0,
         }}
+        lazy={true}
         pagerStyle={{
           flex: 1,
           width: '100%',
